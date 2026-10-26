@@ -1,0 +1,53 @@
+.bar-menu {
+  display: flex;
+  min-height: 6.25rem;
+  box-sizing: border-box;
+  border: 0.25rem solid #000;
+  background: #fff;
+
+  .logo-trois-cent-60 {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5.9375rem 0 2.0625rem;
+
+    img {
+      width: 8.125rem;
+      max-width: none;
+    }
+  }
+
+  .menu-links {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      flex: 1;
+      min-width: 0;
+      border-left: 0.25rem solid #000;
+    }
+
+    a {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      min-height: 5.625rem;
+      box-sizing: border-box;
+      padding: 0.5rem 0.625rem;
+
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.5rem;
+      line-height: 1;
+
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
