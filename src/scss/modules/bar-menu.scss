@@ -19,6 +19,10 @@
     }
   }
 
+  .burger {
+    display: none;
+  }
+
   .menu-links {
     display: flex;
     flex: 1;
@@ -48,6 +52,52 @@
       color: #000;
       text-decoration: none;
       text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: 850px) {
+    flex-wrap: wrap;
+    min-height: 0;
+
+    .logo-trois-cent-60 {
+      min-height: 6rem;
+      padding-right: 1rem;
+    }
+
+    .burger {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding: 0 2rem;
+      border: 0;
+      background: none;
+      cursor: pointer;
+
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    .menu-links {
+      display: none;
+      flex: 0 0 100%;
+      flex-direction: column;
+
+      &.is-open {
+        display: flex;
+      }
+
+      li {
+        border-left: 0;
+        border-top: 0.25rem solid #000;
+      }
+
+      a {
+        align-items: center;
+        min-height: 4rem;
+        padding: 0.5rem 2.0625rem;
+      }
     }
   }
 }
