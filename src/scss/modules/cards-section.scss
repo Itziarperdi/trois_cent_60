@@ -1,0 +1,61 @@
+.cards-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1.875rem;
+  row-gap: 1.375rem;
+  padding: 6.25rem 0 3.125rem;
+
+  h2 {
+    position: absolute;
+    top: 0.327rem;
+    left: 6.24288rem;
+    display: flex;
+    align-items: center;
+    height: 3.00613rem;
+    margin: 0;
+    padding: 0 0.875rem 0 0.1875rem;
+
+    background: #ffe410;
+    transform: rotate(3.17deg);
+
+    font-family: "Bebas Neue";
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--card-section-title, #000);
+  }
+
+  > div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 21.875rem));
+    justify-content: center;
+    gap: 1.4375rem;
+    min-width: 0;
+  }
+
+  button {
+    align-self: center;
+    width: 4rem;
+    height: 4.25rem;
+    padding: 0;
+    border: 0;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  > a {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1.1875rem;
+    padding: 0 7.625rem;
+
+    font-family: Inter;
+    font-size: 1rem;
+    color: var(--links, #707070);
+    text-decoration: none;
+  }
+}

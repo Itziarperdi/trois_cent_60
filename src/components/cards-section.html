@@ -1,7 +1,9 @@
 <section class="cards-section">
   <h2>{{ title }}</h2>
 
-  <button type="button" class="prev" aria-label="Précédent">←</button>
+  <button type="button" class="prev" aria-label="Précédent">
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+  </button>
 
   <div>
     <include
@@ -38,7 +40,9 @@
     ></include>
   </div>
 
-  <button type="button" class="next" aria-label="Suivant">→</button>
+  <button type="button" class="next" aria-label="Suivant">
+    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  </button>
 
   <a href="{{ link }}">tout voir +</a>
 </section>
