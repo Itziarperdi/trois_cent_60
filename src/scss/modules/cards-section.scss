@@ -34,6 +34,9 @@
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
     width: 4rem;
     height: 4.25rem;
@@ -57,5 +60,74 @@
     font-size: 1rem;
     color: var(--links, #707070);
     text-decoration: none;
+  }
+
+  .indicators {
+    display: none;
+  }
+
+  @media (max-width: 850px) {
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 6.25rem 1rem 2rem;
+
+    h2 {
+      left: 1rem;
+    }
+
+    button {
+      display: none;
+    }
+
+    > div {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card {
+        flex: 0 0 100%;
+        max-width: none;
+        min-height: 0;
+        scroll-snap-align: start;
+      }
+    }
+
+    .indicators {
+      grid-column: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      span {
+        width: 4rem;
+        height: 0.5rem;
+        border-radius: 999px;
+        background: #888888;
+        transition:
+          width 0.2s,
+          height 0.2s,
+          background 0.2s;
+
+        &.is-active {
+          width: 5rem;
+          height: 0.6875rem;
+          background: #000;
+        }
+      }
+    }
+
+    > a {
+      grid-column: 2;
+      padding: 0;
+    }
   }
 }
