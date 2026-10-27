@@ -1,0 +1,44 @@
+<section class="cards-section">
+  <h2>{{ title }}</h2>
+
+  <button type="button" class="prev" aria-label="Précédent">←</button>
+
+  <div>
+    <include
+      src="components/card.html"
+      locals='{
+        "image": "{{ card1Image }}",
+        "alt": "{{ card1Alt }}",
+        "title": "{{ card1Title }}",
+        "text": "{{ card1Text }}",
+        "link": "{{ card1Link }}"
+      }'
+    ></include>
+
+    <include
+      src="components/card.html"
+      locals='{
+        "image": "{{ card2Image }}",
+        "alt": "{{ card2Alt }}",
+        "title": "{{ card2Title }}",
+        "text": "{{ card2Text }}",
+        "link": "{{ card2Link }}"
+      }'
+    ></include>
+
+    <include
+      src="components/card.html"
+      locals='{
+        "image": "{{ card3Image }}",
+        "alt": "{{ card3Alt }}",
+        "title": "{{ card3Title }}",
+        "text": "{{ card3Text }}",
+        "link": "{{ card3Link }}"
+      }'
+    ></include>
+  </div>
+
+  <button type="button" class="next" aria-label="Suivant">→</button>
+
+  <a href="{{ link }}">tout voir +</a>
+</section>
