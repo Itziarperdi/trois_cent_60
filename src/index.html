@@ -18,8 +18,35 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <include src="components/bar-menu.html"></include>
+
+    <include
+      src="components/cards-section.html"
+      locals='{
+    "title": "À la une",
+    "link": "#a-la-une",
+
+    "card1Image": "assets/images/feminism.jpg",
+    "card1Alt": "Description de la photo 1",
+    "card1Title": "Premier article",
+    "card1Text": "Un court texte pour le premier article.",
+    "card1Link": "#article-1",
+
+    "card2Image": "assets/images/feminism.jpg",
+    "card2Alt": "Description de la photo 2",
+    "card2Title": "Deuxième article",
+    "card2Text": "Un court texte pour le deuxième article.",
+    "card2Link": "#article-2",
+
+    "card3Image": "assets/images/feminism.jpg",
+    "card3Alt": "Description de la photo 3",
+    "card3Title": "Troisième article",
+    "card3Text": "Un court texte pour le troisième article.",
+    "card3Link": "#article-3"
+  }'
+    ></include>
 
     <script src="js/main.js" type="module"></script>
   </body>
