@@ -1,7 +1,6 @@
 .bar-menu {
   display: flex;
   min-height: 6.25rem;
-  box-sizing: border-box;
   border: 0.25rem solid #000;
   background: #fff;
 
@@ -15,7 +14,6 @@
 
     img {
       width: 8.125rem;
-      max-width: none;
     }
   }
 
@@ -27,8 +25,6 @@
     display: flex;
     flex: 1;
     min-width: 0;
-    margin: 0;
-    padding: 0;
 
     li {
       display: flex;
@@ -42,10 +38,9 @@
       align-items: flex-end;
       width: 100%;
       min-height: 5.625rem;
-      box-sizing: border-box;
       padding: 0.5rem 0.625rem;
 
-      font-family: "Bebas Neue", sans-serif;
+      font-family: $font-title;
       font-size: 1.5rem;
       line-height: 1;
 
@@ -54,7 +49,7 @@
     }
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: $bp-mobile) {
     flex-wrap: wrap;
     min-height: 0;
 

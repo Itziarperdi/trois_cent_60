@@ -3,30 +3,27 @@
   flex-direction: column;
   max-width: 21.875rem;
   min-height: 21.875rem;
-  box-sizing: border-box;
 
   border: 0.25rem solid var(--stroke, #000);
   border-top: 0;
   background: var(--card-background, #fff);
 
   img {
-    box-sizing: border-box;
     height: 10.5625rem;
     object-fit: cover;
-    border-top: 0.25rem solid var(--stroke, #000);
-    border-bottom: 0.25rem solid var(--stroke, #000);
+    border-block: 0.25rem solid var(--stroke, #000);
   }
 
   h3 {
     margin: 1rem 1rem 0;
-    font-family: "Bebas Neue";
+    font-family: $font-title;
     font-size: 1.5rem;
     font-weight: 400;
   }
 
   p {
     margin: 0.5rem 1rem 1rem;
-    font-family: Inter;
+    font-family: $font-text;
     font-size: 1.25rem;
   }
 
@@ -36,11 +33,10 @@
     width: 8.25rem;
     padding: 0.625rem 0;
 
-    font-family: "Bebas Neue";
+    font-family: $font-title;
     font-size: 1.5rem;
     line-height: 1;
     text-align: center;
-    text-decoration: none;
 
     color: white;
     background-color: black;
